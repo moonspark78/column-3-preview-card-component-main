@@ -1,0 +1,118 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.box1{
+    background-color: hsl(31, 77%, 52%);
+    min-height: 25rem;
+    max-width: 16rem;
+    padding: 2.5rem;
+    position: relative;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+
+}
+.box1 img{
+    margin-bottom: 1.5rem;
+}
+.box1 h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3rem;
+}
+.box1 p{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+}
+.box1 button{
+    position: absolute;
+    background: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 12px 18px; 
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    color: hsl(31, 77%, 52%);
+}
+
+
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+.first{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    
+}
+
+.second{
+    background-color: hsl(184, 100%, 22%);
+}
+.third{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.first button{
+    color: hsl(31, 77%, 52%);
+}
+
+.second button{
+    color: hsl(184, 100%, 22%);
+}
+.third button{
+    color: hsl(179, 100%, 13%);
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    } 
+    .box1{
+        min-width: none;
+        /* border-radius: 0 !important;  */
+    }
+    .first{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .third{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+
+    }
+}
+
+
